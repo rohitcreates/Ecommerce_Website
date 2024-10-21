@@ -3,13 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <link rel="stylesheet" href="../src/input.css">
 </head>
 <body>
-    <h1 class="text-3xl font-bold underline">
-        Hello world!
-      </h1>
-    <h1 class="bg-red-600">Tailwid css</h1>
+    <nav id="navbar" class="flex">
+        <!-- main logo -->
+        <div class="logo">
+          <img src="assets/images/logo.png" alt="Logo" />
+        </div>
+        <!-- all pages -->
+        <ul class="pages flex">
+          <li>Element</li>
+          <li>Shop</li>
+          <li>Track Order</li>
+          <li>Blog</li>
+          <li>About us</li>
+          <li>Contacts</li>
+          <!-- search icon -->
+          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+        </ul>
+        <!-- navbar right side -->
+        <div class="nav-right">
+          <ul>
+            <!-- reload icon -->
+            <li><i class="fa-solid fa-arrows-rotate"></i></li>
+            <!-- heart icon -->
+            <li><i class="fa-regular fa-heart"></i></li>
+            <!-- contact icon -->
+            <li><i class="fa-regular fa-user"></i></li>
+            <li>Sign in</li>
+          </ul>
+          <!-- Cart button -->
+          <button class="cart-btn">
+            <!-- cart icon -->
+            <i class="fa-solid fa-cart-arrow-down"></i>
+            Cart <span>$0.00</span>
+          </button>
+        </div>
+      </nav>
 </body>
 </html>
