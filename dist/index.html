@@ -1,47 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="output.css">
-    <link rel="stylesheet" href="../src/input.css">
-</head>
-<body>
-    <nav id="navbar" class="flex">
-        <!-- main logo -->
-        <div class="logo">
-          <img src="assets/images/logo.png" alt="Logo" />
-        </div>
-        <!-- all pages -->
-        <ul class="pages flex">
-          <li>Element</li>
-          <li>Shop</li>
-          <li>Track Order</li>
-          <li>Blog</li>
-          <li>About us</li>
-          <li>Contacts</li>
-          <!-- search icon -->
-          <li><i class="fa-solid fa-magnifying-glass"></i></li>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awersome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="../src/input.css" />
+  </head>
+  <body>
+    <nav id="navbar" class="flex ">
+      <!-- main logo -->
+      <div class="logo">
+        <img src="../src/images/logo.png" alt="Logo" />
+      </div>
+      <!-- all pages -->
+      <ul class="pages flex">
+        <li>Element</li>
+        <li>Shop</li>
+        <li>Track Order</li>
+        <li>Blog</li>
+        <li>About us</li>
+        <li>Contacts</li>
+        <!-- search icon -->
+        <li><i class="fa-solid fa-magnifying-glass"></i></li>
+      </ul>
+      <!-- navbar right side -->
+      <div class="nav-right flex">
+        <ul class="flex">
+          <!-- reload icon -->
+          <li><i class="fa-solid fa-arrows-rotate"></i></li>
+          <!-- heart icon -->
+          <li><i class="fa-regular fa-heart"></i></li>
+          <!-- contact icon -->
+          <li><i class="fa-regular fa-user"></i></li>
+          <li>Sign in</li>
         </ul>
-        <!-- navbar right side -->
-        <div class="nav-right">
-          <ul>
-            <!-- reload icon -->
-            <li><i class="fa-solid fa-arrows-rotate"></i></li>
-            <!-- heart icon -->
-            <li><i class="fa-regular fa-heart"></i></li>
-            <!-- contact icon -->
-            <li><i class="fa-regular fa-user"></i></li>
-            <li>Sign in</li>
-          </ul>
-          <!-- Cart button -->
-          <button class="cart-btn">
-            <!-- cart icon -->
-            <i class="fa-solid fa-cart-arrow-down"></i>
-            Cart <span>$0.00</span>
-          </button>
-        </div>
-      </nav>
-</body>
+        <!-- Cart button -->
+        <button class="cart-btn">
+          <!-- cart icon -->
+          <i class="fa-solid fa-cart-arrow-down"></i>
+          Cart <span>$0.00</span>
+        </button>
+      </div>
+    </nav>
+  </body>
 </html>
