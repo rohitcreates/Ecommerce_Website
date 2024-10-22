@@ -9,12 +9,54 @@
     font-family: "Poppins", sans-serif;
 }
 
+:root{
+    --buttonColor--: #2A74ED;
+}
+
 #navbar {
     height: 50px;
-    background-color: lightcoral;
     align-items: center;
+    height: 80px;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: auto;
+    padding: 0 10px;
 }
 
 #navbar .logo {
-    width: 100px;
+    width: 115px;
+}
+
+.pages li {
+    padding: 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+/* navbar right side  */
+
+.nav-right {
+    align-items: center;
+}
+
+.nav-right ul li {
+    padding: 0 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.nav-right ul li i {
+    font-size: 1.3rem;
+}
+
+/* Cart Button */
+
+.cart-btn {
+    font-size: 0.90rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    background-color: var(--buttonColor--);
+    padding: 8px 20px;
+    color: white;
 }
