@@ -57,6 +57,10 @@
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     background-color: var(--buttonColor--);
-    padding: 8px 20px;
-    color: white;
+    padding: 9px 18px;
+    border-radius: 30px;
+}
+
+.cart-btn span {
+    font-size: 1rem;
 }
