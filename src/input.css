@@ -94,6 +94,24 @@
     font-family: "Poppins", sans-serif;
 }
 
+.hero-content .type-text {
+    font-size: 3.3rem;
+    font-weight: 600;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+    animation: typewriter 3.5s ease-in infinite;
+}
+
+@keyframes typewriter {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+  }
+
 .hero-content > span {
     font-size: 0.85rem;
     font-weight: 400;
