@@ -3,143 +3,159 @@
 @tailwind utilities;
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
-:root{
-    --buttonColor--: #2A74ED;
-    --main-text--: #444444;
+:root {
+  --buttonColor--: #2a74ed;
+  --main-text--: #444444;
 }
 
 #navbar {
-    height: 50px;
-    align-items: center;
-    height: 80px;
-    justify-content: space-between;
-    max-width: 1600px;
-    margin: auto;
-    padding: 0 10px;
+  height: 50px;
+  align-items: center;
+  height: 80px;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: auto;
+  padding: 0 10px;
 }
 
 #navbar .logo {
-    width: 115px;
+  width: 115px;
 }
 
 .pages li {
-    padding: 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 0.95rem;
+  padding: 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
 .pages li:hover {
-    color: #2A74ED;
-    cursor: pointer;
+  color: #2a74ed;
+  cursor: pointer;
 }
 
 /* navbar right side  */
 
 .nav-right {
-    align-items: center;
+  align-items: center;
 }
 
 .nav-right ul li {
-    padding: 0 10px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    font-size: 0.95rem;
+  padding: 0 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 0.95rem;
 }
 
 .nav-right ul li i {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 /* Cart Button */
 
 .cart-btn {
-    font-size: 0.90rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-    background-color: var(--buttonColor--);
-    padding: 9px 18px;
-    border-radius: 30px;
+  font-size: 0.9rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  background-color: var(--buttonColor--);
+  padding: 9px 18px;
+  border-radius: 30px;
 }
 
 .cart-btn span {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 /* Hero Section  */
 
 #hero-section {
-    margin: 0 15px;
+  margin: 0 15px;
 }
 
 .hero-content {
-    background: url(../src/images/main-banner.png)no-repeat center center/cover;
-    height: 80vh;
-    max-width: 1600px;
-    margin: auto;
-    border-radius: 20px;
-    padding: 0 100px;
+  background: url(../src/images/main-banner.png) no-repeat center center/cover;
+  height: 80vh;
+  max-width: 1600px;
+  margin: auto;
+  border-radius: 20px;
+  padding: 0 100px;
 }
 
 .main-heading {
-    font-size: 3.3rem;
-    font-weight: 600;
-    width: 40%;
-    font-family: "Poppins", sans-serif;
+  font-size: 3.3rem;
+  font-weight: 600;
+  width: 40%;
+  font-family: "Poppins", sans-serif;
 }
 
 .hero-content .type-text {
-    font-size: 3.3rem;
-    font-weight: 600;
-    width: 100%;
-    font-family: "Poppins", sans-serif;
-    animation: typewriter 3.5s ease-in infinite;
+  font-size: 3.3rem;
+  font-weight: 600;
+  width: 40%;
+  font-family: "Poppins", sans-serif;
+   white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 2s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
+  border-right: 1px solid black;
+}
+
+.hero-content .type-text_2 {
+    display: none;
 }
 
 @keyframes typewriter {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: orange; }
+  from {
+    width: 0%;
   }
 
+  to {
+    width: 40%;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: black;
+  }
+
+  to {
+    border-color: transparent;
+  }
+}
+
 .hero-content > span {
-    font-size: 0.85rem;
-    font-weight: 400;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  font-size: 0.85rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 .hero-content p {
-    margin: 20px 0;
-    width: 38%;
+  margin: 20px 0;
+  width: 38%;
 }
 
 .buy-btn {
-    font-size: 1.1rem;
-    font-family: "Poppins", sans-serif;
-    font-weight: 600;
-    background-color: var(--buttonColor--);
-    padding: 15px 24px;
-    border-radius: 30px;
+  font-size: 1.1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background-color: var(--buttonColor--);
+  padding: 15px 24px;
+  border-radius: 30px;
 }
 
 .buy-btn:hover {
-    background-color: black;
+  background-color: black;
 }
-
 
 /* Utility Classes */
 
 .main-text {
-    font-size: 1rem;
-    color: var(--main-text--);
+  font-size: 1rem;
+  color: var(--main-text--);
 }
