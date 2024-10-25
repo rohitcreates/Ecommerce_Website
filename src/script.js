@@ -1,11 +1,12 @@
-const typeWriter = document.querySelector(".type-text")
-
-let newText = ["Changed The World"]
-
+const text = ["Changed The World", "Drives Emotion"];
 let index = 0;
 
-function loopTextChange() {
-    typeWriter.innerHTML = newText[0]
-    index = (index + 1)%newText.length
-    setTimeout(loopTextChange, 3500)
+
+function changeText() {
+    const typeWriter = document.querySelector(".type-text");
+
+    typeWriter.innerText = text[index];
+    index = (index + 1) % text.length;
 }
+
+setInterval(changeText,7000);

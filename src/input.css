@@ -101,13 +101,10 @@
   font-family: "Poppins", sans-serif;
    white-space: nowrap;
   overflow: hidden;
-  animation: typewriter 2s steps(13) infinite alternate, blink 800ms steps(13) infinite normal;
+  animation: typewriter 3.5s steps(13) infinite alternate, blink 880ms steps(13) infinite normal;
   border-right: 1px solid black;
 }
 
-.hero-content .type-text_2 {
-    display: none;
-}
 
 @keyframes typewriter {
   from {
@@ -115,7 +112,7 @@
   }
 
   to {
-    width: 40%;
+    width: 50%;
   }
 }
 
