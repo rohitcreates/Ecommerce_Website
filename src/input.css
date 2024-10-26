@@ -149,7 +149,21 @@
 .buy-btn:hover {
   background-color: black;
 }
+/* Product section */
 
+#product-section {
+  margin-top: 20px;
+}
+
+.product {
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.product .item img {
+  width: 350px;
+}
 /* Utility Classes */
 
 .main-text {
