@@ -26,3 +26,18 @@ prevBtn.addEventListener("click", function () {
     .querySelector(".product-content")
     .prepend(products[products.length - 1]);
 });
+
+const iconHover = document.querySelectorAll(".icon");
+const hoverItem = document.querySelectorAll(".hover-item");
+
+iconHover.forEach((icon) => {
+  icon.addEventListener("mouseover", function () {
+    const index = Array.from(iconHover).indexOf(icon);  // Get the index of the hovered icon
+    hoverItem[index].style.display = "flex";  // Show the corresponding hover item
+  });
+
+  icon.addEventListener("mouseout", function () {
+    const index = Array.from(iconHover).indexOf(icon);  // Get the index of the hovered icon
+    hoverItem[index].style.display = "none";  // Hide the corresponding hover item
+  });
+});
