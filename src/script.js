@@ -27,6 +27,8 @@ prevBtn.addEventListener("click", function () {
     .prepend(products[products.length - 1]);
 });
 
+// This line of code for hover image show and hide 
+
 const iconHover = document.querySelectorAll(".icon");
 const hoverItem = document.querySelectorAll(".hover-item");
 
@@ -41,3 +43,9 @@ iconHover.forEach((icon) => {
     hoverItem[index].style.display = "none";  // Hide the corresponding hover item
   });
 });
+
+hoverItem.forEach((hoverItem) => {
+  hoverItem.addEventListener("mouserover", function () {
+    hoverItem[index].style.display = 'flex';
+  })
+})
