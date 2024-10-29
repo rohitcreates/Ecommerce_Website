@@ -428,13 +428,6 @@
   width: 300px;
 }
 
-/* utility classes */
-
-.product-heading {
-  font-size: 1.6rem;
-  font-weight: 500;
-  font-family: "Poppins", serif;
-}
 
 /* Previous and next button */
 
@@ -473,4 +466,10 @@
 .main-text {
   font-size: 1rem;
   color: var(--main-text--);
+}
+
+.product-heading {
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Poppins", serif;
 }
